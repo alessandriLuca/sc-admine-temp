@@ -1,0 +1,6 @@
+source("runDocker.R")
+source("denseSpaceVisualization.R")
+scratch.folder=getwd()
+file=paste(scratch.folder,"latentSpace.csv",sep="/")
+cloutput=paste(scratch.folder,"clustering.output.csv",sep="/")
+denseSpaceVisualization(group=c("docker"),  scratch.folder=scratch.folder, file=file,separator=",",cloutput=cloutput,tsneplot=1,umapplot=1)
